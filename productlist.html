@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.css">
+    <link rel="stylesheet/less" href="css/productlist.css">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo"><img src="images/header_logo.png" alt=""></a>
+    <a href="#" class="appdown"><img src="images/header_app.png" alt=""></a>
+</header>
+<section id="search">
+    <form action="#">
+        <input type="search" name="" id="" placeholder="请输入要比价的商品">
+        <input type="submit" value="搜索">
+    </form>
+</section>
+<section id="recomend">
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default one"><a href="">首页</a></button>
+        <button type="button" class="btn btn-default">全部分类</button>
+        <button type="button" class="btn btn-default two">电视</button>
+    </div>
+</section>
+<section id="product">
+
+</section>
+<div id="footer">
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default pull-left prev">上一页</button>
+        <button type="button" class="btn btn-default pull-right next">下一页</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             第一页<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+
+        </ul>
+    </div>
+</div>
+</body>
+<script type="text/html" id="productlist">
+    {{each result as value i}}
+    <a href="bijia.html?productid={{value.productId}}&brandname={{value.brandName}}">
+        <div class="media">
+        <div class="media-left">
+                {{#value.productImg}}
+        </div>
+        <div class="media-body">
+            <h5 class="media-heading">{{value.productName}}</h5>
+            <div class="price">
+                <em>{{value.productPrice}}</em>
+            </div>
+            <div class="other">
+                <em class="left">{{value.productQuote}}</em>
+                <em class="right">{{value.productCom}}</em>
+            </div>
+        </div>
+    </div>
+    </a>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/productlist.js"></script>
+</html>

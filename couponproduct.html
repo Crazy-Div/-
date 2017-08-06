@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.css">
+    <link rel="stylesheet/less" href="css/couponproduct.less">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo"> < </a>
+        <h4>优惠券</h4>
+        <a href="#" class="appdown"><img src="images/header_app.png" alt=""></a>
+    </header>
+    <section id="section">
+
+    </section>
+    <div id="galleryOverlay">
+        <div class="gallerySlider">
+
+        </div>
+        <div class="arrow">
+            <a class="left"> < </a>
+            <a class="right"> > </a>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="row">
+            <div class="col-xs-4">
+                <a href="#">登录</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#">注册</a>
+            </div>
+            <div class="col-xs-4">
+                <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+            </div>
+        </div>
+        <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+        <p>m.manmanbuy.com </p>
+    </footer>
+</body>
+<script type="text/html" id="couponproduct">
+    {{each result as value i}}
+    <div class="media">
+        <div class="media-left">
+            <a href="javascript:;">
+                {{#value.couponProductImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h5 class="media-heading">{{value.couponProductName}}</h5>
+            <span>{{value.couponProductPrice}}</span>
+            <div class="other">
+                {{value.couponProductTime}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/couponproduct.js"></script>
+</html>

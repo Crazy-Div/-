@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.css">
+    <link rel="stylesheet/less" href="css/gsproduct.less">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo"> < </a>
+    <h4>凑品单</h4>
+    <a href="#" class="appdown"><img src="images/header_app.png" alt=""></a>
+</header>
+<section id="nav">
+    <div class="filter clearfix">
+        <a href="">
+            <div class="dropdown one">
+                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    京东
+                </button>
+            </div>
+        </a>
+        <a href="">
+            <div class="dropdown two">
+                <button id="abc" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    华北
+                </button>
+            </div>
+        </a>
+        <a href="">
+            <div class="dropdown">
+                <button id="abcd" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="caret"></span>
+                    全部价格
+                </button>
+            </div>
+        </a>
+    </div>
+</section>
+<section id="section">
+    <ul></ul>
+</section>
+
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+    <p>m.manmanbuy.com </p>
+</footer>
+</body>
+<script type="text/html" id="gsproduct">
+    <ul class="dropdown-menu" aria-labelledby="dLabel">
+        {{each result as value i}}
+        <li><a href="javascript:;" data-shopid="{{value.shopId}}">{{value.shopName}}</a></li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/html" id="getgsshoparea">
+    <ul class="dropdown-menu" aria-labelledby="abc">
+        {{each result as value i}}
+        <li><a href="javascript:;" data-areaid="{{value.areaId}}">{{value.areaName}}</a></li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/html" id="getgsproduct">
+    {{each result as value i}}
+    <li>
+        <a href="">
+            <div class="pic">
+                <img src="{{value.productImg}}" alt="">
+            </div>
+            <div class="title">{{value.productName}}</div>
+            <div class="other">
+                <div class="price">{{value.productPrice}}</div>
+                <div class="btn">去凑单</div>
+                <div class="clearfix"></div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/gsproduct.js"></script>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.css">
+    <link rel="stylesheet/less" href="css/newstyle.less">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo"><img src="images/header_logo.png" alt=""></a>
+    <a href="#" class="appdown"><img src="images/header_app.png" alt=""></a>
+</header>
+<section id="search">
+    <form action="#">
+        <input type="search" name="" id="" placeholder="请输入要比价的商品">
+        <input type="submit" value="搜索">
+    </form>
+</section>
+
+<section id="recomend">
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default one"><a href="javascript:;">首页</a></button>
+        <button type="button" class="btn btn-default">全部分类</button>
+        <button type="button" class="btn btn-default">电视</button>
+    </div>
+
+</section>
+<div class="rank">热门品牌排行</div>
+<section id="section">
+
+</section>
+
+<div id="footer">
+
+</div>
+</body>
+<script type="text/html" id="getbrandtitle">
+    {{each result as value}}
+    <div>
+        <a href="brand.html?brandtitleid={{value.brandTitleId}}">
+            {{value.brandTitle}}
+        </a>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/brandTitle.js"></script>
+</html>

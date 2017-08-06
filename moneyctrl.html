@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.css">
+    <link rel="stylesheet/less" href="css/moneyctrl.less">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo"> < </a>
+    <h4>省钱控-最新优惠</h4>
+    <a href="#" class="appdown"><img src="images/header_app.png" alt=""></a>
+</header>
+<section id="section">
+
+</section>
+<div id="footer">
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default pull-left prev">上一页</button>
+        <button type="button" class="btn btn-default pull-right next">下一页</button>
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            第一页<span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+
+        </ul>
+    </div>
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+    <p>m.manmanbuy.com </p>
+</div>
+</body>
+<script type="text/html" id="moneyCtrl">
+{{each result as value i}}
+<a href="moneyproduct.html?productid={{value.productId}}">
+<div class="media">
+    <div class="media-left">
+            {{#value.productImgSm}}
+    </div>
+    <div class="media-body">
+        <h5 class="media-heading">{{value.productName}}</h5>
+        <span>{{value.productPinkage}}</span>
+        <div class="other">
+            <em class="left">{{value.productFrom}}</em>
+            <em class="right">{{value.productComCount.replace("有","").replace('人评论',"")}}</em>
+        </div>
+    </div>
+</div>
+</a>
+{{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/moneyctrl.js"></script>
+</html>

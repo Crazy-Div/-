@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			width: 200px;
+			height: 200px;
+			background-color: red;
+		}
+		@keyframes toRight {
+			from{
+
+			}
+			to{
+				transform:translateX(800px)
+			}
+		}
+		.animation {
+			animation:toRight linear 2s 1s infinite;
+		}
+	</style>
+</head>
+<body>
+	<div onclick = "func()"></div>
+</body>
+<script>
+	var div = document.querySelector("div");
+	var arr = [1,2,3,4];
+	// console.log(arr.toString());
+	// console.log(arr);
+	arr.map(function(el,index,arr){
+		console.log(this.el)
+	},arr);
+
+</script>
+</html>

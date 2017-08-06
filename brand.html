@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.css">
+    <link rel="stylesheet/less" href="css/brand.less">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo"><img src="images/header_logo.png" alt=""></a>
+    <a href="#" class="appdown"><img src="images/header_app.png" alt=""></a>
+</header>
+<section id="search">
+    <form action="#">
+        <input type="search" name="" id="" placeholder="请输入要比价的商品">
+        <input type="submit" value="搜索">
+    </form>
+</section>
+
+<section id="recomend">
+    <div class="btn-group" role="group" aria-label="...">
+        <button type="button" class="btn btn-default first"><a href="javascript:;">首页</a></button>
+        <button type="button" class="btn btn-default">全部分类</button>
+        <button type="button" class="btn btn-default">电视</button>
+    </div>
+
+</section>
+<div class="one">平板电视那个牌子好</div>
+<section id="section">
+    <ul></ul>
+</section>
+<div class="two" id="one">
+    平板电视产品销量排行
+</div>
+<section id="product">
+
+</section>
+<div class="three" id="three">
+    平板电视最新评论
+</div>
+<section id="comment">
+
+</section>
+<div id="footer">
+
+</div>
+</body>
+<script type="text/html" id="getbrand">
+    {{each result as value i}}
+    <li>
+        <a href="">
+            <em class="top1">{{i}}</em>
+            <div class="inner clearfix">
+                <div class="tit">{{value.brandName}}</div>
+                <p>
+                    {{value.brandInfo}}
+                </p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script type="text/html" id="getbrandproductlist">
+    {{each result as value i}}
+    <a href="javascript:;" data-productid={{value.productId}}>
+        <div class="media">
+            <div class="media-left">
+                {{#value.productImg}}
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">{{value.productName}}</h5>
+                <div class="price">
+                    <em>{{value.productPrice}}</em>
+                </div>
+                <div class="other">
+                    <em class="left">{{value.productQuote}}</em>
+                    <em class="right">{{value.productCom}}</em>
+                </div>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+</script>
+<script type="text/html" id="com">
+    {{each result as value i}}
+    <div class="top">
+        <div class="media">
+            <div class="media-left">
+                <a href="" data-productid="{{value.productId}}">
+                    {{#value.productImg}}
+                </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">{{value.productName}}</h5>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+    {{/each}}
+</script>
+<script type="text/html" id="getproductcom">
+    {{each result as value i}}
+    <div class="comment">
+        <div class="name clearfix">
+            <span class="left">{{value.comName}}</span>
+            <span class="right">{{value.comTime}}</span>
+        </div>
+        <div class="com">{{value.comContent}}</div>
+    </div>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/brand.js"></script>
+</html>

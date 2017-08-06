@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.css">
+    <link rel="stylesheet/less" href="css/category.css">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo"><img src="images/header_logo.png" alt=""></a>
+    <a href="#" class="appdown"><img src="images/header_app.png" alt=""></a>
+</header>
+<section id="search">
+    <form action="#">
+        <input type="search" name="" id="" placeholder="请输入要比价的商品">
+        <input type="submit" value="搜索">
+    </form>
+</section>
+<section id="categories">
+    <div class="panel-group">
+
+    </div>
+</section>
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+    <p>m.manmanbuy.com </p>
+</footer>
+</body>
+<script type="text/html" id="category">
+    {{each result as value i}}
+    <div class="three">
+        <div class="one">
+            <a data-titleId="{{value.titleId}}">{{value.title}}</a>
+        </div>
+        <div class="two"></div>
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/html" id="categoryTmp">
+    <div class="row">
+        {{each result as value i}}
+        <div class="col-xs-4">
+            <a href="productlist.html?categoryid={{value.categoryId}}&category={{value.category}}">{{value.category}}</a>
+        </div>
+        {{/each}}
+    </div>
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/category.js"></script>
+</html>

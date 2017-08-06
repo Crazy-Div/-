@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet/less" href="css/base.css">
+    <link rel="stylesheet/less" href="css/coupon.less">
+    <script src="lib/less/less.js"></script>
+</head>
+<body>
+<header id="header">
+    <a href="#" class="logo"> < </a>
+    <h4>优惠券</h4>
+    <a href="#" class="appdown"><img src="images/header_app.png" alt=""></a>
+</header>
+
+<section id="section">
+    <ul class="quan clearfix">
+
+    </ul>
+</section>
+
+<footer id="footer">
+    <div class="row">
+        <div class="col-xs-4">
+            <a href="#">登录</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#">注册</a>
+        </div>
+        <div class="col-xs-4">
+            <a href="#"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a>
+        </div>
+    </div>
+    <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+    <p>m.manmanbuy.com </p>
+</footer>
+</body>
+<script type="text/html" id="quan">
+    {{each result as value i}}
+    <li>
+        <a href="couponproduct.html?couponid={{value.couponId}}">
+            <img src="{{value.couponImg}}" alt="">
+            <h4>{{value.couponTitle}}</h4>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="lib/jquery/jquery.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
+<script src="lib/template.js"></script>
+<script src="js/coupon.js"></script>
+</html>

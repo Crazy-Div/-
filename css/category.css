@@ -1,0 +1,110 @@
+body {
+  background-color: #f5f5f5;
+}
+#header {
+  height: 50px;
+  background-color: #ff841d;
+  padding: 10px;
+}
+#header > .logo {
+  margin-left: 5px;
+}
+#header > .logo > img {
+  height: 25px;
+}
+#header > .appdown {
+  float: right;
+  margin-top: -2px;
+}
+#header > .appdown > img {
+  height: 34px;
+}
+#search {
+  background-color: #fff;
+  padding: 10px;
+}
+#search > form {
+  padding-right: 70px;
+  position: relative;
+}
+#search > form > input[type="search"] {
+  outline: none;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  border: 0;
+  background-color: #f5f5f5;
+  padding-left: 15px;
+}
+#search > form > input[type="submit"] {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 63px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  color: #fff;
+  border: 0;
+}
+#categories {
+  padding: 5px;
+  background-color: #EDEDED;
+}
+#categories > .panel-group {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#categories > .panel-group .three .one {
+  height: 40px;
+  border-bottom: 1px solid #ccc;
+}
+#categories > .panel-group .three .one a {
+  padding-left: 15px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background: url(http://www.zuyushop.com/wap/images/arrow1.gif) right center no-repeat;
+}
+#categories > .panel-group .three .two .row {
+  border-bottom: 1px solid #ccc;
+}
+#categories > .panel-group .three .two .row div {
+  height: 40px;
+  border: 1px solid #ccc;
+  line-height: 40px;
+  text-align: center;
+  border-left: 0;
+  border-top: 0;
+}
+#categories > .panel-group .three .two .row div a {
+  color: black;
+  display: block;
+  height: 40px;
+}
+#footer > .row > div {
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+#footer > .row > div > a > img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+}
+#footer > .row > div + div {
+  border-left: 0;
+}
+#footer > p {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 12px;
+}
+#footer > p > a:first-child {
+  color: red;
+}

@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+input {
+  outline: none;
+}
+em,
+i {
+  font-style: normal;
+}
+b {
+  font-weight: normal;
+}
+body {
+  background: #f7f7f7;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clearfix1:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+  overflow: hidden;
+}
+a {
+  text-decoration: none !important;
+  color: black;
+}
+ul {
+  list-style: none;
+}

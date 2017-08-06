@@ -1,0 +1,111 @@
+#header {
+  position:relative;
+  height: 50px;
+  background-color: #ff841d;
+  padding: 10px;
+  >.logo {
+    float: left;
+    margin-left: 5px;
+    font-size: 20px;
+    color:white;
+  }
+  h4 {
+    position: absolute;
+    left:50%;
+    margin-left:-36px;
+    color: white;
+  }
+  >.appdown {
+    float: right;
+    margin-top: -2px;
+    >img {
+      height: 34px;
+    }
+  }
+}
+
+#section {
+  ul{
+    li{
+      float: left;
+      display: table-cell;
+      padding: 10px 0 0 10px;
+      text-align: center;
+      vertical-align: middle;
+      background: none;
+      width: 50%;
+      background: #FFFFFF;
+      border: 1px solid #eeeeee;
+      box-sizing: border-box;
+      border-top-width: 0;
+      overflow: hidden;
+      a {
+        display:block;
+        .img {
+          margin: 10px auto;
+          //overflow: hidden;
+          width: 140px;
+          height: 140px;
+          img{
+            width: 140px;
+            height: 140px;
+          }
+        }
+        .tit {
+          color: #333333;
+          padding: 0 8px;
+          font-size: 14px;
+          text-align: left;
+          line-height: 18px;
+          height: 36px;
+          overflow: hidden;
+        }
+        .subtit {
+          color: #ff6c00;
+          margin-top: 4px;
+          font-size: 14px;
+          padding: 0 8px;
+          text-align: left;
+          overflow: hidden;
+          height: 18px;
+          line-height: 18px;
+        }
+        .info {
+          padding: 6px 8px;
+          color: #a1a1a1;
+          font-size: 12px;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+#footer {
+  .row{
+    >div{
+      text-align: center;
+      border:1px solid #ccc;
+      height: 30px;
+      line-height: 30px;
+      >a{
+        >img{
+          width: 15px;
+          height: 15px;
+          margin-bottom:3px
+        }
+      }
+    }
+    >div+div{
+      border-left: 0;
+    }
+  }
+  >p{
+    margin: 5px 0;
+    text-align: center;
+    font-size:12px;
+    >a:first-child{
+      color:red;
+    }
+  }
+}

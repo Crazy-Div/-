@@ -1,0 +1,153 @@
+body {
+  background-color: #fff;
+}
+#header {
+  position: relative;
+  height: 50px;
+  background-color: #e4393c;
+  padding: 10px;
+}
+#header > .logo {
+  float: left;
+  margin-left: 5px;
+  font-size: 20px;
+  color: white;
+}
+#header h4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -27px;
+  color: white;
+}
+#header > .appdown {
+  float: right;
+  margin-top: -2px;
+}
+#header > .appdown > img {
+  height: 34px;
+}
+#galleryOverlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  z-index: 100000;
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  display: none;
+  -moz-transition: opacity 1s ease;
+  -webkit-transition: opacity 1s ease;
+  transition: opacity 1s ease;
+}
+#galleryOverlay .gallerySlider {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+  white-space: nowrap;
+  position: absolute;
+  -moz-transition: left 0.4s ease;
+  -webkit-transition: left 0.4s ease;
+  transition: left 0.4s ease;
+}
+#galleryOverlay .gallerySlider div {
+  background: url(preloader.gif) no-repeat center center;
+  height: 100%;
+  line-height: 1px;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+#galleryOverlay .gallerySlider div img {
+  margin-top: 250px;
+}
+#galleryOverlay .arrow {
+  position: relative;
+  width: 100%;
+  margin-top: 300px;
+  opacity: 0.7;
+}
+#galleryOverlay .arrow .left {
+  text-align: center;
+  display: block;
+  width: 30px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #ccc;
+  position: absolute;
+  left: 0;
+  font-size: 30px;
+  color: #fff;
+}
+#galleryOverlay .arrow .right {
+  text-align: center;
+  display: block;
+  width: 30px;
+  height: 80px;
+  line-height: 80px;
+  background-color: #ccc;
+  position: absolute;
+  right: 0;
+  font-size: 30px;
+  color: #fff;
+}
+#galleryOverlay.visible {
+  opacity: 1;
+}
+#section {
+  background-color: #fff;
+  padding-top: 10px;
+}
+#section .media {
+  height: 140px;
+}
+#section .media .media-left a {
+  display: block;
+}
+#section .media .media-left a img {
+  width: 100px;
+  height: 100px;
+}
+#section .media .media-body h5 {
+  font-size: 15px;
+  line-height: 28px;
+  overflow: hidden;
+}
+#section .media .media-body span {
+  font-size: 15px;
+  line-height: 28px;
+  color: red;
+}
+#section .media .media-body .other {
+  font-size: 12px;
+  color: #EE7700;
+  margin-top: 10px;
+}
+#footer .row > div {
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+#footer .row > div > a {
+  color: black;
+}
+#footer .row > div > a > img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+}
+#footer .row > div + div {
+  border-left: 0;
+}
+#footer > p {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 12px;
+}
+#footer > p > a:first-child {
+  color: red;
+}

@@ -1,0 +1,152 @@
+body {
+  background-color: #fff;
+}
+#header {
+  position:relative;
+  height: 50px;
+  background-color: #ff841d;
+  padding: 10px;
+  >.logo {
+    float: left;
+    margin-left: 5px;
+    font-size: 20px;
+    color:white;
+  }
+  h4 {
+    position: absolute;
+    left:50%;
+    margin-left:-36px;
+    color: white;
+  }
+  >.appdown {
+    float: right;
+    margin-top: -2px;
+    >img {
+      height: 34px;
+    }
+  }
+}
+
+#section {
+  h3 {
+    font-size: 18px;
+    margin: 10px auto 5px auto;
+    font-weight: 800;
+    text-align: left;
+    color: #5a5a5a;
+  }
+  h4 {
+    color: #ff6c00;
+    display: block;
+    font-size: 15px;
+  }
+  h5 {
+    span {
+      color: #999999;
+      margin: 0px 4px;
+    }
+  }
+}
+.info {
+  font-size: 16px;
+  line-height: 24px;
+  color: #606060;
+  padding-bottom: 20px;
+  position: relative;
+  .productInfo {
+    float: left;
+    margin-right: 140px;
+    margin-bottom:20px;
+  }
+  .sm{
+    img {
+      width: 120px;
+      height: 120px;
+      vertical-align: middle;
+      position: absolute;
+      right: 5px;
+    }
+  }
+  .lg {
+    text-align: center;
+  }
+  .buy {
+    padding:20px;
+    a {
+      text-align: center;
+      border:1px solid #ccc;
+      display: block;
+      height: 40px;
+      line-height:40px;
+      border-radius: 3px;
+      background-color: orange;
+      color:white;
+    }
+  }
+}
+.comment {
+  .reply {
+    padding:10px;
+    .form {
+      border: 1px solid #ccc;
+      textarea {
+        width: 100%;
+      }
+      .ctrl {
+        height: 40px;
+        border-bottom:1px solid #ccc;
+        input {
+          width: 80px;
+          height: 40px;
+          line-height: 40px;
+          background-color:#ff841d;
+          float: right;
+        }
+      }
+    }
+    .list {
+      .ui-border-b {
+        overflow: hidden;
+        .userimg {
+          float: left;
+          img {
+            width: 40px;
+            height: 40px;
+          }
+        }
+        .con {
+          float: left;
+          margin-left:10px;
+        }
+      }
+    }
+  }
+}
+#footer {
+  .row{
+    >div{
+      text-align: center;
+      border:1px solid #ccc;
+      height: 30px;
+      line-height: 30px;
+      >a{
+        >img{
+          width: 15px;
+          height: 15px;
+          margin-bottom:3px
+        }
+      }
+    }
+    >div+div{
+      border-left: 0;
+    }
+  }
+  >p{
+    margin: 5px 0;
+    text-align: center;
+    font-size:12px;
+    >a:first-child{
+      color:red;
+    }
+  }
+}

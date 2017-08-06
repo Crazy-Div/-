@@ -1,0 +1,139 @@
+#header {
+  position:relative;
+  height: 50px;
+  background-color:#ff8b00;
+  padding: 10px;
+  >.logo {
+    float: left;
+    margin-left: 5px;
+    font-size: 20px;
+    color:white;
+  }
+  h4 {
+    position: absolute;
+    left:50%;
+    margin-left:-27px;
+    color: white;
+  }
+  >.appdown {
+    float: right;
+    margin-top: -2px;
+    >img {
+      height: 34px;
+    }
+  }
+}
+
+#nav {
+  .filter{
+    height: 30px;
+    line-height:30px;
+    border-bottom:1px solid #ccc;
+   a {
+     display:block;
+     color:black;
+     button {
+       width: 33%;
+       text-align: center;
+       font-size:16px;
+       float: left;
+       border:0;
+       background-color: #fff;
+       outline:none;
+     }
+     .dropdown-menu {
+       padding:0;
+       width: 100%;
+       margin-top:33px;
+       li {
+         height: 40px;
+         line-height:40px;
+         border-bottom:1px dashed #ccc;
+       }
+     }
+   }
+  }
+}
+
+#section {
+  ul{
+    li{
+      float: left;
+      width: 50%;
+      a {
+        display: block;
+        margin: 4px;
+        background-color: #ffffff;
+        .pic {
+          width: 100%;
+          height: auto;
+          text-align: center;
+          overflow: hidden;
+          img {
+            width: 100%;
+            height:100%;
+          }
+        }
+        .title {
+          color: #333333;
+          word-break: break-all;
+          padding: 0 6px;
+          height: 14px;
+          overflow: hidden;
+          font-size: 12px;
+          margin-top: 10px;
+          line-height: 14px;
+          font-weight: normal;
+          text-align: left;
+          margin-top: 6px;
+        }
+        .other {
+          padding: 6px;
+          .price {
+            float: left;
+            color: #f8601d;
+            font-size: 20px;
+          }
+          .btn {
+            float: right;
+            font-size: 14px;
+            color: #FFFFFF;
+            border-radius: 3px;
+            background-color: #ff9501;
+            padding: 4px 10px;
+            text-decoration: none;
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+#footer {
+  .row{
+    >div{
+      text-align: center;
+      border:1px solid #ccc;
+      height: 30px;
+      line-height: 30px;
+      >a{
+        >img{
+          width: 15px;
+          height: 15px;
+          margin-bottom:3px
+        }
+      }
+    }
+    >div+div{
+      border-left: 0;
+    }
+  }
+  >p{
+    margin: 5px 0;
+    text-align: center;
+    font-size:12px;
+    >a:first-child{
+      color:red;
+    }
+  }
+}

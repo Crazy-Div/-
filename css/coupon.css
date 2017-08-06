@@ -1,0 +1,25 @@
+#header {
+  position: relative;
+  height: 50px;
+  background-color: #e4393c;
+  padding: 10px;
+}
+#header > .logo {
+  float: left;
+  margin-left: 5px;
+  font-size: 20px;
+  color: white;
+}
+#header h4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -66px;
+  color: white;
+}
+#header > .appdown {
+  float: right;
+  margin-top: -2px;
+}
+#header > .appdown > img {
+  height: 34px;
+}

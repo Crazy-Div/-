@@ -1,0 +1,94 @@
+#header {
+  position: relative;
+  height: 50px;
+  background-color: #ff841d;
+  padding: 10px;
+}
+#header > .logo {
+  float: left;
+  margin-left: 5px;
+  font-size: 20px;
+  color: white;
+}
+#header h4 {
+  position: absolute;
+  left: 50%;
+  margin-left: -66px;
+  color: white;
+}
+#header > .appdown {
+  float: right;
+  margin-top: -2px;
+}
+#header > .appdown > img {
+  height: 34px;
+}
+#section {
+  background-color: #fff;
+  padding-top: 10px;
+}
+#section a {
+  display: block;
+}
+#section a .media {
+  height: 140px;
+}
+#section a .media .media-left img {
+  width: 100px;
+  height: 100px;
+}
+#section a .media .media-body h5 {
+  font-size: 15px;
+  line-height: 28px;
+  overflow: hidden;
+}
+#section a .media .media-body span {
+  font-size: 15px;
+  line-height: 28px;
+  color: red;
+}
+#footer .btn-group {
+  position: relative;
+  width: 100%;
+}
+#footer .btn-group .btn {
+  outline: none;
+}
+#footer .btn-group .dropdown-toggle {
+  border: none;
+  width: 168px;
+  position: absolute;
+  left: 50%;
+  margin-left: -84px;
+}
+#footer .btn-group .dropdown-toggle span {
+  border: none;
+}
+#footer .btn-group .dropdown-menu {
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -84px;
+}
+#footer .row > div {
+  text-align: center;
+  border: 1px solid #ccc;
+  height: 30px;
+  line-height: 30px;
+}
+#footer .row > div > a > img {
+  width: 15px;
+  height: 15px;
+  margin-bottom: 3px;
+}
+#footer .row > div + div {
+  border-left: 0;
+}
+#footer > p {
+  margin: 5px 0;
+  text-align: center;
+  font-size: 12px;
+}
+#footer > p > a:first-child {
+  color: red;
+}
